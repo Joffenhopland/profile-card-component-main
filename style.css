@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main{
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.card{
+   width: 350px; 
+   background-color: white  ;
+   border-radius: 15px;
+   overflow: hidden;
+   text-align: center;
+}
+
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+
+.card-middle{
+    padding-bottom: 30px;
+}
+
+.img-holder{
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto 30px auto;
+}
+
+.img-holder img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name{
+    font-size: 18px;
+}
+
+.age{
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin-left: 6px;
+}
+
+.city{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-top: 12px;
+}
+
+.card-footer{
+    border-top: 1px solid hsla(0, 0%, 59%, 0.562);
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.meta{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.circles{
+    position: absolute;
+    z-index: -1;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 2s; /* Firefox < 16 */
+ -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+     animation: fadein 2s;
+}
+
+.c1{
+    position: relative;
+    top: 100px;
+    left: -500px;
+}
+
+.c2{
+    position: relative;
+    bottom: -20px;
+    right: -200px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 10px auto 5px auto;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
